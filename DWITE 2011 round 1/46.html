@@ -1,0 +1,14421 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+<title>DWITE: DWITE 2011-2012 High School Round 1</title>
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
+<meta http-equiv="PRAGMA" content="NO-CACHE">
+<meta name="generator" content="EditPlus">
+<meta name="author" content="CompSci.ca">
+<meta name="title" content="DWITE: Online Computer Programming Contest">
+<meta name="keywords" content="online,computer,programming,contest,Canadian,secondary,school,students">
+<meta name="description" content="Online computer programming contest for Canadian secondary school students">
+
+
+<link rel="shortcut icon" href="http://dwite.ca/favicon.ico">
+<link rel="icon" href="http://dwite.ca/animated_favicon1.gif" type="image/gif">
+
+<link href="46_files/main_2.css" media="screen" rel="Stylesheet" type="text/css">
+
+<script src="46_files/ga.js" async="" type="text/javascript"></script><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-21535717-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 
+'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 
+'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; 
+s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<script src="46_files/tab.js"></script><style media="screen" type="text/css">    #uservoice-dialog {      z-index: 100003;      display: block;      text-align: left;      margin: -2em auto 0 auto;      position: fixed;     }        #uservoice-overlay {      position: fixed;      z-index:100002;      width: 100%;      height: 100%;      left: 0;      top: 0;      background-color: #000;      opacity: 0.7;    }        #uservoice-overlay p {      padding: 5px;      color: #ddd;      font: bold 14px arial, sans-serif;      margin: 0;      letter-spacing: -1px;    }        #uservoice-dialog #uservoice-dialog-close {      position: absolute;      height: 48px;      width: 48px;      top: -11px;      right: -12px;      color: #06c;      cursor: pointer;      background-position: 0 0;      background-repeat: no-repeat;      background-color: transparent;    }        html.dialog-open object,    html.dialog-open embed {      visibility: hidden;    }    a#uservoice-dialog-close { background-image: url(http://cdn.uservoice.com/images/icons/close.png); }</style><style type="text/css" charset="utf-8">/* See license.txt for terms of usage */
+/** reset styling **/
+.firebugResetStyles {
+    z-index: 2147483646 !important;
+    top: 0 !important;
+    left: 0 !important;
+    display: block !important;
+    border: 0 none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    outline: 0 !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    position: fixed !important;
+    -moz-transform: rotate(0deg) !important;
+    -moz-transform-origin: 50% 50% !important;
+    -moz-border-radius: 0 !important;
+    -moz-box-shadow: none !important;
+    background: transparent none !important;
+    pointer-events: none !important;
+}
+
+.firebugBlockBackgroundColor {
+    background-color: transparent !important;
+}
+
+.firebugResetStyles:before, .firebugResetStyles:after {
+    content: "" !important;
+}
+/**actual styling to be modified by firebug theme**/
+.firebugCanvas {
+    display: none !important;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.firebugLayoutBox {
+    width: auto !important;
+    position: static !important;
+}
+
+.firebugLayoutBoxOffset {
+    opacity: 0.8 !important;
+    position: fixed !important;
+}
+
+.firebugLayoutLine {
+    opacity: 0.4 !important;
+    background-color: #000000 !important;
+}
+
+.firebugLayoutLineLeft, .firebugLayoutLineRight {
+    width: 1px !important;
+    height: 100% !important;
+}
+
+.firebugLayoutLineTop, .firebugLayoutLineBottom {
+    width: 100% !important;
+    height: 1px !important;
+}
+
+.firebugLayoutLineTop {
+    margin-top: -1px !important;
+    border-top: 1px solid #999999 !important;
+}
+
+.firebugLayoutLineRight {
+    border-right: 1px solid #999999 !important;
+}
+
+.firebugLayoutLineBottom {
+    border-bottom: 1px solid #999999 !important;
+}
+
+.firebugLayoutLineLeft {
+    margin-left: -1px !important;
+    border-left: 1px solid #999999 !important;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.firebugLayoutBoxParent {
+    border-top: 0 none !important;
+    border-right: 1px dashed #E00 !important;
+    border-bottom: 1px dashed #E00 !important;
+    border-left: 0 none !important;
+    position: fixed !important;
+    width: auto !important;
+}
+
+.firebugRuler{
+    position: absolute !important;
+}
+
+.firebugRulerH {
+    top: -15px !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 14px !important;
+    background: url("data:image/png,%89PNG%0D%0A%1A%0A%00%00%00%0DIHDR%00%00%13%88%00%00%00%0E%08%02%00%00%00L%25a%0A%00%00%00%04gAMA%00%00%D6%D8%D4OX2%00%00%00%19tEXtSoftware%00Adobe%20ImageReadyq%C9e%3C%00%00%04%F8IDATx%DA%EC%DD%D1n%E2%3A%00E%D1%80%F8%FF%EF%E2%AF2%95%D0D4%0E%C1%14%B0%8Fa-%E9%3E%CC%9C%87n%B9%81%A6W0%1C%A6i%9A%E7y%0As8%1CT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AATE9%FE%FCw%3E%9F%AF%2B%2F%BA%97%FDT%1D~K(%5C%9D%D5%EA%1B%5C%86%B5%A9%BDU%B5y%80%ED%AB*%03%FAV9%AB%E1%CEj%E7%82%EF%FB%18%BC%AEJ8%AB%FA'%D2%BEU9%D7U%ECc0%E1%A2r%5DynwVi%CFW%7F%BB%17%7Dy%EACU%CD%0E%F0%FA%3BX%FEbV%FEM%9B%2B%AD%BE%AA%E5%95v%AB%AA%E3E5%DCu%15rV9%07%B5%7F%B5w%FCm%BA%BE%AA%FBY%3D%14%F0%EE%C7%60%0EU%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5JU%88%D3%F5%1F%AE%DF%3B%1B%F2%3E%DAUCNa%F92%D02%AC%7Dm%F9%3A%D4%F2%8B6%AE*%BF%5C%C2Ym~9g5%D0Y%95%17%7C%C8c%B0%7C%18%26%9CU%CD%13i%F7%AA%90%B3Z%7D%95%B4%C7%60%E6E%B5%BC%05%B4%FBY%95U%9E%DB%FD%1C%FC%E0%9F%83%7F%BE%17%7DkjMU%E3%03%AC%7CWj%DF%83%9An%BCG%AE%F1%95%96yQ%0Dq%5Dy%00%3Et%B5'%FC6%5DS%95pV%95%01%81%FF'%07%00%00%00%00%00%00%00%00%00%F8x%C7%F0%BE%9COp%5D%C9%7C%AD%E7%E6%EBV%FB%1E%E0(%07%E5%AC%C6%3A%ABi%9C%8F%C6%0E9%AB%C0'%D2%8E%9F%F99%D0E%B5%99%14%F5%0D%CD%7F%24%C6%DEH%B8%E9rV%DFs%DB%D0%F7%00k%FE%1D%84%84%83J%B8%E3%BA%FB%EF%20%84%1C%D7%AD%B0%8E%D7U%C8Y%05%1E%D4t%EF%AD%95Q%BF8w%BF%E9%0A%BF%EB%03%00%00%00%00%00%00%00%00%00%B8vJ%8E%BB%F5%B1u%8Cx%80%E1o%5E%CA9%AB%CB%CB%8E%03%DF%1D%B7T%25%9C%D5(%EFJM8%AB%CC'%D2%B2*%A4s%E7c6%FB%3E%FA%A2%1E%80~%0E%3E%DA%10x%5D%95Uig%15u%15%ED%7C%14%B6%87%A1%3B%FCo8%A8%D8o%D3%ADO%01%EDx%83%1A~%1B%9FpP%A3%DC%C6'%9C%95gK%00%00%00%00%00%00%00%00%00%20%D9%C9%11%D0%C0%40%AF%3F%EE%EE%92%94%D6%16X%B5%BCMH%15%2F%BF%D4%A7%C87%F1%8E%F2%81%AE%AAvzr%DA2%ABV%17%7C%E63%83%E7I%DC%C6%0Bs%1B%EF6%1E%00%00%00%00%00%00%00%00%00%80cr%9CW%FF%7F%C6%01%0E%F1%CE%A5%84%B3%CA%BC%E0%CB%AA%84%CE%F9%BF)%EC%13%08WU%AE%AB%B1%AE%2BO%EC%8E%CBYe%FE%8CN%ABr%5Dy%60~%CFA%0D%F4%AE%D4%BE%C75%CA%EDVB%EA(%B7%F1%09g%E5%D9%12%00%00%00%00%00%00%00%00%00H%F6%EB%13S%E7y%5E%5E%FB%98%F0%22%D1%B2'%A7%F0%92%B1%BC%24z3%AC%7Dm%60%D5%92%B4%7CEUO%5E%F0%AA*%3BU%B9%AE%3E%A0j%94%07%A0%C7%A0%AB%FD%B5%3F%A0%F7%03T%3Dy%D7%F7%D6%D4%C0%AAU%D2%E6%DFt%3F%A8%CC%AA%F2%86%B9%D7%F5%1F%18%E6%01%F8%CC%D5%9E%F0%F3z%88%AA%90%EF%20%00%00%00%00%00%00%00%00%00%C0%A6%D3%EA%CFi%AFb%2C%7BB%0A%2B%C3%1A%D7%06V%D5%07%A8r%5D%3D%D9%A6%CAu%F5%25%CF%A2%99%97zNX%60%95%AB%5DUZ%D5%FBR%03%AB%1C%D4k%9F%3F%BB%5C%FF%81a%AE%AB'%7F%F3%EA%FE%F3z%94%AA%D8%DF%5B%01%00%00%00%00%00%00%00%00%00%8E%FB%F3%F2%B1%1B%8DWU%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*UiU%C7%BBe%E7%F3%B9%CB%AAJ%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5*%AAj%FD%C6%D4%5Eo%90%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5%86%AF%1B%9F%98%DA%EBm%BBV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%AD%D6%E4%F58%01%00%00%00%00%00%00%00%00%00%00%00%00%00%40%85%7F%02%0C%008%C2%D0H%16j%8FX%00%00%00%00IEND%AEB%60%82") repeat-x !important;
+    border-top: 1px solid #BBBBBB !important;
+    border-right: 1px dashed #BBBBBB !important;
+    border-bottom: 1px solid #000000 !important;
+}
+
+.firebugRulerV {
+    top: 0 !important;
+    left: -15px !important;
+    width: 14px !important;
+    height: 100% !important;
+    background: url("data:image/png,%89PNG%0D%0A%1A%0A%00%00%00%0DIHDR%00%00%00%0E%00%00%13%88%08%02%00%00%00%0E%F5%CB%10%00%00%00%04gAMA%00%00%D6%D8%D4OX2%00%00%00%19tEXtSoftware%00Adobe%20ImageReadyq%C9e%3C%00%00%06~IDATx%DA%EC%DD%D1v%A20%14%40Qt%F1%FF%FF%E4%97%D9%07%3BT%19%92%DC%40(%90%EEy%9A5%CB%B6%E8%F6%9Ac%A4%CC0%84%FF%DC%9E%CF%E7%E3%F1%88%DE4%F8%5D%C7%9F%2F%BA%DD%5E%7FI%7D%F18%DDn%BA%C5%FB%DF%97%BFk%F2%10%FF%FD%B4%F2M%A7%FB%FD%FD%B3%22%07p%8F%3F%AE%E3%F4S%8A%8F%40%EEq%9D%BE8D%F0%0EY%A1Uq%B7%EA%1F%81%88V%E8X%3F%B4%CEy%B7h%D1%A2E%EBohU%FC%D9%AF2fO%8BBeD%BE%F7X%0C%97%A4%D6b7%2Ck%A5%12%E3%9B%60v%B7r%C7%1AI%8C%BD%2B%23r%00c0%B2v%9B%AD%CA%26%0C%1Ek%05A%FD%93%D0%2B%A1u%8B%16-%95q%5Ce%DCSO%8E%E4M%23%8B%F7%C2%FE%40%BB%BD%8C%FC%8A%B5V%EBu%40%F9%3B%A72%FA%AE%8C%D4%01%CC%B5%DA%13%9CB%AB%E2I%18%24%B0n%A9%0CZ*Ce%9C%A22%8E%D8NJ%1E%EB%FF%8F%AE%CAP%19*%C3%BAEKe%AC%D1%AAX%8C*%DEH%8F%C5W%A1e%AD%D4%B7%5C%5B%19%C5%DB%0D%EF%9F%19%1D%7B%5E%86%BD%0C%95%A12%AC%5B*%83%96%CAP%19%F62T%86%CAP%19*%83%96%CA%B8Xe%BC%FE)T%19%A1%17xg%7F%DA%CBP%19*%C3%BA%A52T%86%CAP%19%F62T%86%CA%B0n%A9%0CZ%1DV%C6%3D%F3%FCH%DE%B4%B8~%7F%5CZc%F1%D6%1F%AF%84%F9%0F6%E6%EBVt9%0E~%BEr%AF%23%B0%97%A12T%86%CAP%19%B4T%86%CA%B8Re%D8%CBP%19*%C3%BA%A52huX%19%AE%CA%E5%BC%0C%7B%19*CeX%B7h%A9%0C%95%E1%BC%0C%7B%19*CeX%B7T%06%AD%CB%5E%95%2B%BF.%8F%C5%97%D5%E4%7B%EE%82%D6%FB%CF-%9C%FD%B9%CF%3By%7B%19%F62T%86%CA%B0n%D1R%19*%A3%D3%CA%B0%97%A12T%86uKe%D0%EA%B02*%3F1%99%5DB%2B%A4%B5%F8%3A%7C%BA%2B%8Co%7D%5C%EDe%A8%0C%95a%DDR%19%B4T%C66%82fA%B2%ED%DA%9FC%FC%17GZ%06%C9%E1%B3%E5%2C%1A%9FoiB%EB%96%CA%A0%D5qe4%7B%7D%FD%85%F7%5B%ED_%E0s%07%F0k%951%ECr%0D%B5C%D7-g%D1%A8%0C%EB%96%CA%A0%A52T%C6)*%C3%5E%86%CAP%19%D6-%95A%EB*%95q%F8%BB%E3%F9%AB%F6%E21%ACZ%B7%22%B7%9B%3F%02%85%CB%A2%5B%B7%BA%5E%B7%9C%97%E1%BC%0C%EB%16-%95%A12z%AC%0C%BFc%A22T%86uKe%D0%EA%B02V%DD%AD%8A%2B%8CWhe%5E%AF%CF%F5%3B%26%CE%CBh%5C%19%CE%CB%B0%F3%A4%095%A1%CAP%19*Ce%A8%0C%3BO*Ce%A8%0C%95%A12%3A%AD%8C%0A%82%7B%F0v%1F%2FD%A9%5B%9F%EE%EA%26%AF%03%CA%DF9%7B%19*Ce%A8%0C%95%A12T%86%CA%B8Ze%D8%CBP%19*Ce%A8%0C%95%D1ae%EC%F7%89I%E1%B4%D7M%D7P%8BjU%5C%BB%3E%F2%20%D8%CBP%19*Ce%A8%0C%95%A12T%C6%D5*%C3%5E%86%CAP%19*Ce%B4O%07%7B%F0W%7Bw%1C%7C%1A%8C%B3%3B%D1%EE%AA%5C%D6-%EBV%83%80%5E%D0%CA%10%5CU%2BD%E07YU%86%CAP%19*%E3%9A%95%91%D9%A0%C8%AD%5B%EDv%9E%82%FFKOee%E4%8FUe%A8%0C%95%A12T%C6%1F%A9%8C%C8%3D%5B%A5%15%FD%14%22r%E7B%9F%17l%F8%BF%ED%EAf%2B%7F%CF%ECe%D8%CBP%19*Ce%A8%0C%95%E1%93~%7B%19%F62T%86%CAP%19*Ce%A8%0C%E7%13%DA%CBP%19*Ce%A8%0CZf%8B%16-Z%B4h%D1R%19f%8B%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1%A2%A52%CC%16-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2EKe%98-Z%B4h%D1%A2EKe%D02%5B%B4h%D1%A2EKe%D02%5B%B4h%D1%A2E%8B%96%CA0%5B%B4h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%16-%95a%B6h%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-Z*%C3l%D1%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z%B4T%86%D9%A2E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4h%A9%0C%B3E%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%D1R%19f%8B%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1%A2%A52%CC%16-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2EKe%98-Z%B4h%D1%A2EKe%D02%5B%B4h%D1%A2EKe%D02%5B%B4h%D1%A2E%8B%96%CA0%5B%B4h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%16-%95a%B6h%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-Z*%C3l%D1%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z%B4T%86%D9%A2E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4h%A9%0C%B3E%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%D1R%19f%8B%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1%A2%A52%CC%16-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2EKe%98-Z%B4h%D1%A2EKe%D02%5B%B4h%D1%A2EKe%D02%5B%B4h%D1%A2E%8B%96%CA0%5B%B4h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%16-%95a%B6h%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-Z*%C3l%D1%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z%B4T%86%D9%A2E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4%AE%A4%F5%25%C0%00%DE%BF%5C'%0F%DA%B8q%00%00%00%00IEND%AEB%60%82") repeat-y !important;
+    border-left: 1px solid #BBBBBB !important;
+    border-right: 1px solid #000000 !important;
+    border-bottom: 1px dashed #BBBBBB !important;
+}
+
+.overflowRulerX > .firebugRulerV {
+    left: 0 !important;
+}
+
+.overflowRulerY > .firebugRulerH {
+    top: 0 !important;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.fbProxyElement {
+    position: fixed !important;
+    pointer-events: auto !important;
+}</style></head>
+<body>
+
+<div id="mainbox">
+<div id="mainbox_co">
+	
+	<div id="header_box"><img src="46_files/header_p2.jpg" alt="" class="h_right"><a href="http://dwite.ca/"><img src="46_files/header.jpg" alt="DWITE Contest"></a></div>
+	
+	<div id="menu_box">
+		<ul>
+    
+			<li><a href="http://dwite.ca/login">Login</a></li>
+    
+      <li><a href="http://dwite.ca/register">Registration</a></li>
+			<li><a href="http://dwite.ca/contact">Contact</a></li>
+			<li><a href="http://dwite.ca/rules">Rules</a></li>
+            <li><a href="http://dwite.ca/about">About</a></li>
+			<li><a href="http://dwite.ca/">Home</a></li>
+		</ul>
+	</div>
+
+	<div class="wapper">
+	<div class="outer">
+	<div class="inner">
+		
+		<div class="left">
+			<ul>
+				<li><a href="http://dwite.ca/">Home</a></li>
+				<li><a href="http://dwite.ca/rules">Rules</a></li>
+                <li><a href="http://dwite.ca/judge">The Judge</a></li>
+        <!--<li><a href="/home/faq">FAQ</a></li>-->
+				<li><a href="http://dwite.ca/news">News</a></li>
+        <li><a href="http://dwite.ca/home/howtojoin">How to Join</a></li>
+      </ul>
+			<div class="space"></div>
+			<ul>
+				<li><a href="http://dwite.ca/register">Registration</a></li>
+				<li><a href="http://dwite.ca/usercp">UserCP</a></li>
+				<li><a href="http://dwite.ca/teamcp">TeamCP</a></li>
+				<li><a href="http://dwite.ca/teachercp">TeacherCP</a></li>
+        <li><a href="http://dwite.ca/contestcp">ContestCP</a></li>
+			</ul>
+			<div class="space"></div>
+			<ul>
+				<li><a href="http://dwite.ca/calendar">Contest Calendar</a></li>
+				<li><a href="http://dwite.ca/home/pastcontests">Past Contests</a></li>
+				<li><a href="http://dwite.ca/home/allteams">Teams Registered</a></li>
+				<li><a href="http://dwite.ca/home/allschools">Schools Registered</a></li>
+				<li><a href="http://dwite.ca/ranks">Rankings</a></li>
+			</ul>
+			<div class="space"></div>
+			<ul>
+				<li><a href="http://dwite.ca/about">About DWITE</a></li>
+				<li><a href="http://dwite.ca/contact">Contact Info</a></li>
+				<li><a href="http://compsci.ca/v3/viewforum.php?f=131">Message Board</a></li>
+        <li><a href="http://dwite.ca/links">Links</a></li>
+			</ul>
+<div class="space"></div>
+
+<div style=" text-align: center;">
+                                <a style="text-align: center;" href="#" onclick="UserVoice.Popin.show(uservoiceOptions); return false;"><img onmouseover="this.src='http://dwite.ca/images/feedback1.png'" onmouseout="this.src='http://dwite.ca/images/feedback.png'" src="46_files/feedback.png" border="0"></a>
+</div>
+		 </div>
+
+		 <div class="center">
+			
+		   <h1>DWITE 2011-2012 High School Round 1</h1>
+		   <p>
+       
+		   	<font size="1">
+</font></p><p><font size="1"><b>Start Date:</b> Wednesday October 26, 2011 At 03:15PM EDT<br>
+<b>Open To:</b> <br>
+</font></p><ul><font size="1">
+
+<li>High School</li>
+
+</font></ul><p></p><font size="1">
+</font>
+
+<div class="desc" style="background-color: #EFFFFF; margin-left: 15px;">
+<font size="2">DWITE annual 5 round contest for high school students. 
+Each team must have a teacher from there school supervise them during 
+the contest. This contest is modeled after the CCC and ECOO contests and
+ has a ranging difficulty of problems for high school students.<p></p></font>
+</div>
+<br>
+
+
+
+<h2>Questions</h2>
+<ul>
+
+<li><a href="http://dwite.ca/questions/arablish_numbers.html">Question #1</a> - Test case: 
+
+
+
+<a href="http://dwite.ca/home/testcase/197">1</a>   
+
+</li>
+
+<li><a href="http://dwite.ca/questions/penny_game.html">Question #2</a> - Test case: 
+
+
+
+<a href="http://dwite.ca/home/testcase/198">1</a>   
+
+</li>
+
+<li><a href="http://dwite.ca/questions/take_a_walk.html">Question #3</a> - Test case: 
+
+
+
+<a href="http://dwite.ca/home/testcase/199">1</a>   
+
+</li>
+
+<li><a href="http://dwite.ca/questions/c001_numbers.html">Question #4</a> - Test case: 
+
+
+
+<a href="http://dwite.ca/home/testcase/200">1</a>   
+
+</li>
+
+<li><a href="http://dwite.ca/questions/tattarrattat.html">Question #5</a> - Test case: 
+
+
+
+<a href="http://dwite.ca/home/testcase/201">1</a>   
+
+</li>
+
+</ul>
+
+<h2>Results</h2>
+<table border="1">
+<tbody><tr class="head1">
+<td><b>Place</b></td>
+<td><b>Team</b></td>
+<td><b>School</b></td>
+
+
+
+<td><b>#1</b></td>
+
+
+<td><b>#2</b></td>
+
+
+<td><b>#3</b></td>
+
+
+<td><b>#4</b></td>
+
+
+<td><b>#5</b></td>
+
+<td><b>Total Score</b></td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>1</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/783">PropagandaPanda</a>
+	
+</td>
+<td>Don Mills Collegiate Institute</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/783/168/0/answer1.py">144 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/783/169/0/answer2.py">143 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/783/170/0/answer3.py">136 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/783/171/0/dumbanswer4.py">132 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/783/172/0/answer5.py">72 (3/5)</a></td>
+
+
+<td>627</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>2</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/1459">d310</a>
+	
+</td>
+<td>Woburn Collegiate Institute</td>
+
+
+
+
+
+
+
+<td>123 (5/5)</td>
+
+
+
+
+
+<td>143 (5/5)</td>
+
+
+
+
+
+<td>106 (4/5)</td>
+
+
+
+
+
+<td>128 (5/5)</td>
+
+
+
+
+
+<td>109 (5/5)</td>
+
+
+<td>609</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>3</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/1745">* Star *</a>
+	
+</td>
+<td>Lisgar Collegiate Institute</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1745/168/0/p1.cpp">144 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1745/169/0/p2.cpp">143 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1745/170/0/p3.cpp">140 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1745/171/0/p4.cpp">104 (4/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1745/172/1/p5.cpp">78 (3/5)</a></td>
+
+
+<td>609</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>4</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2331">0x09F911029D74E35BD84156C5635688C0</a>
+	
+</td>
+<td>Woburn Collegiate Institute</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2331/168/1/dwite1_351351.351.cpp">133 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2331/169/1/dwite2_365434.cpp">133 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2331/170/1/dwite3_s5af84fs5a.cpp">80 (3/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2331/171/0/dwite4_as43d8a.cpp">140 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2331/172/0/dwite5_35asd35a1c.cpp">120 (5/5)</a></td>
+
+
+<td>606</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>5</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2372">tedying</a>
+	
+</td>
+<td>The Woodlands School</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2372/168/0/d1.t">143 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2372/169/0/d2.t">142 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2372/170/1/d3.t">99 (4/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2372/171/1/d4.t">119 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2372/172/0/d5.t">76 (3/5)</a></td>
+
+
+<td>579</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>6</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/1059">GG</a>
+	
+</td>
+<td>Richmond Hill High School</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1059/168/0/arablish.java">135 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1059/169/0/penny.java">128 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1059/170/1/walk.java">108 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1059/171/0/coolnum.java">130 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1059/172/1/palin.java">60 (3/5)</a></td>
+
+
+<td>561</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>7</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2359">IAMA NULL POINTER</a>
+	
+</td>
+<td>Bayview Secondary School</td>
+
+
+
+
+
+
+
+<td>144 (5/5)</td>
+
+
+
+
+
+<td>142 (5/5)</td>
+
+
+
+
+
+<td>85 (3/5)</td>
+
+
+
+
+
+<td>138 (5/5)</td>
+
+
+
+
+
+<td>30 (1/5)</td>
+
+
+<td>539</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>8</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2246">10100111001</a>
+	
+</td>
+<td>Vincent Massey</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2246/168/0/DWITE.py">142 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2246/169/0/DWITE2.py">141 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2246/170/0/DWITE3.py">55 (2/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2246/171/0/DWITE4.py">128 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2246/172/0/DWITE5.py">71 (3/5)</a></td>
+
+
+<td>537</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>9</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2286">Stephen</a>
+	
+</td>
+<td>W L Mackenzie CI</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2286/168/0/Arabish.java">142 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2286/169/1/Pennies.java">124 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2286/170/0/Candy.java">48 (2/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2286/171/0/Coolness.java">141 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2286/172/1/Palindrome.java">74 (3/5)</a></td>
+
+
+<td>529</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>10</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/1959">IIJ</a>
+	
+</td>
+<td>A. Y. Jackson Secondary School</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1959/168/1/DwiteQ1.java">128 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1959/169/1/DwiteQ2.java">110 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1959/170/1/p3.java">103 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1959/171/0/p4.java">132 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1959/172/1/DwiteQ5.java">20 (1/5)</a></td>
+
+
+<td>493</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>11</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2285">Don't Touch Sandvich</a>
+	
+</td>
+<td>W L Mackenzie CI</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2285/168/0/prob1.java">138 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2285/169/0/prob2.java">141 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2285/170/1/prob3.java">65 (3/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2285/171/0/prob42.java">123 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2285/172/0/prob5.java">0 (0/5)</a></td>
+
+
+<td>467</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>12</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2292">I'M BATMAN</a>
+	
+</td>
+<td>W L Mackenzie CI</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2292/168/0/P1.java">139 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2292/169/0/P2.java">134 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2292/170/1/P3.java">52 (2/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2292/171/0/P4.java">119 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2292/172/0/P5.java">22 (1/5)</a></td>
+
+
+<td>466</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>13</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2440">allYourBase</a>
+	
+</td>
+<td>John Fraser Secondary</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2440/168/0/Q1.cpp">141 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2440/169/0/Q2.cpp">140 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2440/170/0/Q3.t">107 (4/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2440/171/0/Q4.cpp">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2440/172/1/Q5.cpp">63 (3/5)</a></td>
+
+
+<td>451</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>14</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2271">RoFL</a>
+	
+</td>
+<td>Don Mills Collegiate Institute</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2271/168/1/Q1.java">50 (1/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2271/169/0/Q2.java">134 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2271/171/0/Q4.java">131 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>446</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>15</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2455">EGIdrA</a>
+	
+</td>
+<td>Vincent Massey</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2455/168/0/1.py">142 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2455/169/0/2.py">140 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2455/170/1/3.py">51 (2/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2455/171/1/prob4.java">113 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2455/172/0/5.py">0 (0/5)</a></td>
+
+
+<td>446</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>16</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2245">                                                                    NINJAX!</a>
+	
+</td>
+<td>Bell High School</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2245/168/0/q1.rb">143 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2245/169/0/q2.rb">139 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2245/170/0/Program.cs">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2245/171/0/q4.cpp">122 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2245/172/0/q5.rb">41 (2/5)</a></td>
+
+
+<td>445</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>17</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2297">☺  </a>
+	
+</td>
+<td>Glenforest Secondary School</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2297/168/0/Question1.java">121 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2297/169/0/Question2.java">130 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2297/170/0/Question3.java">33 (1/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2297/171/1/Question4.java">116 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2297/172/0/Question5.java">43 (2/5)</a></td>
+
+
+<td>443</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>18</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/1503">Evil Es</a>
+	
+</td>
+<td>W L Mackenzie CI</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1503/168/0/Qu1.java">103 (4/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1503/169/0/Q2.java">142 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1503/170/0/Q3.java">82 (4/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1503/171/1/Q4.java">111 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1503/172/0/Q5.java">0 (0/5)</a></td>
+
+
+<td>438</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>19</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2226">AWeSOMENAMES</a>
+	
+</td>
+<td>The Woodlands School</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2226/168/0/p1.t">137 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2226/169/0/p2.t">135 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2226/170/0/p3.t">103 (4/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2226/171/0/p4.t">39 (1/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2226/172/0/p5.t">22 (1/5)</a></td>
+
+
+<td>436</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>20</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2213">Era of Spork</a>
+	
+</td>
+<td>Victoria Park C.I.</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2213/168/0/DwiteQ1.java">138 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2213/169/1/DwiteQ2.java">122 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2213/170/1/DwiteQ3.java">51 (2/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2213/171/1/Dwite03.java">119 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2213/172/0/Dwite05.java">0 (0/5)</a></td>
+
+
+<td>430</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>21</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2384">while success!=True: "keep trying"</a>
+	
+</td>
+<td>Vincent Massey</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2384/168/0/DWITE_2011_n1_n1.py">142 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2384/169/1/DWITE_2011_n1_n2.py">125 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2384/170/1/DWITE_2011_n1_n3.py">51 (2/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2384/171/1/DWITE_2011_n1_n4.py">103 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2384/172/0/DWITE_2011_n1_n5.py">0 (0/5)</a></td>
+
+
+<td>421</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>22</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2425">Insert cool name here</a>
+	
+</td>
+<td>Dr. Norman Bethune C.I.</td>
+
+
+
+
+
+
+
+<td>144 (5/5)</td>
+
+
+
+
+
+<td>136 (5/5)</td>
+
+
+
+
+
+<td>20 (1/5)</td>
+
+
+
+
+
+<td>120 (5/5)</td>
+
+
+
+
+
+<td>0 (0/5)</td>
+
+
+<td>420</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>23</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/1695">The Other Guys!</a>
+	
+</td>
+<td>Sir John A. Macdonald Secondary School</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1695/168/0/NewClass.java">111 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1695/169/1/NewMain.java">113 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1695/170/1/DWITE3.java">53 (2/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1695/171/1/INEFFICIENT_WINNER.java">121 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1695/172/1/Dwite_5.java">20 (1/5)</a></td>
+
+
+<td>418</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>24</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2287">Adrian</a>
+	
+</td>
+<td>W L Mackenzie CI</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2287/168/0/Dwite1.java">111 (4/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2287/169/1/Prog2.java">118 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2287/170/0/Prog3.java">45 (2/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2287/171/0/Prog4.java">137 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2287/172/0/Prog5.java">0 (0/5)</a></td>
+
+
+<td>411</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>25</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2310">Aperture Science</a>
+	
+</td>
+<td>Mississauga Secondary School</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2310/168/0/D1.java">98 (4/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2310/169/1/D2.java">112 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2310/170/0/D3.java">64 (3/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2310/171/0/D4.java">136 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>410</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>26</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2358">iћ∂/(t∂)Ψ=ĤΨ</a>
+	
+</td>
+<td>Richview C.I.</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2358/168/0/P1.py">144 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2358/169/0/P2.py">142 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2358/170/1/P3.py">62 (2/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2358/171/1/P42.py">61 (3/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2358/172/0/P5.py">0 (0/5)</a></td>
+
+
+<td>409</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>27</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2241">FOUR AWESOME DUDES WHO USE THAAAAA POOOOWWWWWAAAAAA OF PENCIL AND PAPER! :D</a>
+	
+</td>
+<td>Earl Haig Secondary School</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2241/168/0/Question1.cpp">122 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2241/169/0/Question2.py">120 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2241/170/0/p3.cpp">50 (2/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2241/171/1/p4.cpp">102 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>394</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>28</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2147">Trolololololololololololololololo</a>
+	
+</td>
+<td>Forest Heights Collegiate</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2147/168/0/first.java">113 (4/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2147/169/0/third.java">107 (4/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2147/170/0/fifth.java">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2147/171/0/second.java">142 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2147/172/1/fifth.java">31 (1/5)</a></td>
+
+
+<td>393</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>29</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2236">5.4E-44s</a>
+	
+</td>
+<td>Crescent School</td>
+
+
+
+
+
+
+
+<td>90 (3/5)</td>
+
+
+
+
+
+<td>136 (5/5)</td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td>128 (5/5)</td>
+
+
+
+
+
+<td>31 (1/5)</td>
+
+
+<td>385</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>30</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/603">Pikachu Bread</a>
+	
+</td>
+<td>Sir Robert Borden High School</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/603/168/0/dwite1.cpp">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/603/169/0/P2.java">142 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/603/170/0/P3.java">67 (2/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/603/171/0/dwite4.cpp">138 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/603/172/0/dwite5.cpp">35 (1/5)</a></td>
+
+
+<td>382</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>31</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2003">Gogogo</a>
+	
+</td>
+<td>Waterloo Collegiate Institute</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2003/168/1/Round1.java">129 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2003/169/0/Round2.java">143 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2003/170/0/Round3.java">58 (2/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2003/171/1/Round4.java">49 (1/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2003/172/0/Round5.java">0 (0/5)</a></td>
+
+
+<td>379</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>32</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2481">zhewei</a>
+	
+</td>
+<td>Vincent Massey</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2481/168/0/Problem1.java">140 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2481/169/1/Problem2.java">127 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2481/171/1/Problem4.java">43 (1/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2481/172/1/Problem5.java">67 (3/5)</a></td>
+
+
+<td>377</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>33</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/1951">3 A;M</a>
+	
+</td>
+<td>Thornlea S.S.</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1951/168/0/Q1.java">136 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1951/169/0/Q2.java">123 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1951/171/0/DwiteQ4A2.java">117 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1951/172/0/hardcode.java">0 (0/5)</a></td>
+
+
+<td>376</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>34</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2263">Enye</a>
+	
+</td>
+<td>Don Mills Collegiate Institute</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2263/168/0/Q1.java">135 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2263/169/0/Q2.java">120 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2263/170/0/Q3.java">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2263/171/1/Q4.java">120 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>375</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>35</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2288">Dan V.</a>
+	
+</td>
+<td>W L Mackenzie CI</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2288/168/1/Q1.java">67 (3/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2288/169/0/Q2.java">141 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2288/170/1/Q3.java">52 (2/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2288/171/0/Q4.java">115 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2288/172/0/Q5.java">0 (0/5)</a></td>
+
+
+<td>375</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>36</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2233">HikariWeight</a>
+	
+</td>
+<td>Woburn Collegiate Institute</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2233/168/0/Prob1.cpp">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2233/169/0/Prob2.cpp">140 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2233/170/1/Prob3.cpp">83 (3/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2233/171/0/Prob4.cpp">59 (2/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2233/172/0/Prob5.cpp">89 (4/5)</a></td>
+
+
+<td>371</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>37</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2418">ThornhillTigers</a>
+	
+</td>
+<td>Thornhill Secondary School</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2418/168/1/Main1.java">87 (3/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2418/169/1/Main2.java">46 (1/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2418/170/0/Main3.java">92 (4/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2418/171/1/Main4.java">122 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2418/172/0/Main5.java">23 (1/5)</a></td>
+
+
+<td>370</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>38</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/847">Ponchiki</a>
+	
+</td>
+<td>W L Mackenzie CI</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/847/168/0/Problem1.java">111 (4/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/847/169/0/Problem2.java">138 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/847/171/0/Problem4.java">120 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/847/172/0/Problem5.java">0 (0/5)</a></td>
+
+
+<td>369</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>39</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2365">Fortress 2</a>
+	
+</td>
+<td>W L Mackenzie CI</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2365/168/1/Lol.java">122 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2365/169/0/Lol2.java">115 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2365/170/0/Lol3.java">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2365/171/0/Lol2.java">128 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2365/172/0/Lol5.java">0 (0/5)</a></td>
+
+
+<td>365</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>40</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2103">kevink_rup</a>
+	
+</td>
+<td>Vincent Massey</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2103/168/0/q1.py">140 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2103/169/0/q2.py">138 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2103/170/0/q3.py">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2103/171/1/q4.py">83 (4/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2103/172/0/q5.py">0 (0/5)</a></td>
+
+
+<td>361</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>41</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/1553">!Pie++</a>
+	
+</td>
+<td>Richmond Hill High School</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1553/168/0/Q1.java">102 (4/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1553/169/0/Q2.java">129 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1553/171/0/Q4.java">128 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1553/172/0/Q5.java">0 (0/5)</a></td>
+
+
+<td>359</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>42</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2387">IndexError: list index out of range</a>
+	
+</td>
+<td>Vincent Massey</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2387/168/0/dwite1.py">140 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2387/169/1/dwite2.py">76 (3/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2387/170/0/dwite3.py">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2387/171/0/dwite4.py">141 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2387/172/0/dwite5a.py">0 (0/5)</a></td>
+
+
+<td>357</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>43</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2462">Nancy2011</a>
+	
+</td>
+<td>Don Mills Collegiate Institute</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2462/168/0/Problem1.java">132 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2462/169/1/Problem2.java">116 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2462/171/1/Problem4.java">108 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>356</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>44</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/1437">iPwnHabib</a>
+	
+</td>
+<td>Forest Heights Collegiate</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1437/168/1/Problem1.java">101 (4/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1437/169/1/Problem2.java">120 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1437/170/0/Problem3.java">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1437/171/0/Problem4.java">131 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1437/172/0/Problem5.java">0 (0/5)</a></td>
+
+
+<td>352</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>45</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/1147">Iam Nerdy</a>
+	
+</td>
+<td>St. Francis Xavier Secondary School</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1147/168/1/Arabish.java">87 (3/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1147/169/0/PennyGame.java">134 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1147/171/0/C001.java">130 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>351</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>46</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2342">null pointer</a>
+	
+</td>
+<td>St. Francis Xavier Secondary School</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2342/168/0/p1.java">107 (4/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2342/169/0/p2.java">124 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2342/171/0/p4.java">118 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2342/172/0/p5.java">0 (0/5)</a></td>
+
+
+<td>349</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>47</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2279">CowsWithGuns Software Inc.</a>
+	
+</td>
+<td>Michael Power/St. Joseph</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2279/168/0/main.cpp">141 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2279/169/1/main.cpp">129 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2279/170/0/main.cpp">78 (3/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>348</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>48</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2231">Panchea</a>
+	
+</td>
+<td>Crescent School</td>
+
+
+
+
+
+
+
+<td>93 (3/5)</td>
+
+
+
+
+
+<td>138 (5/5)</td>
+
+
+
+
+
+<td>71 (3/5)</td>
+
+
+
+
+
+<td>41 (1/5)</td>
+
+
+
+
+
+<td></td>
+
+
+<td>343</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>49</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2346">Are Minds Computable?</a>
+	
+</td>
+<td>St. Francis Xavier Secondary School</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2346/168/0/Oct2011_P1.java">135 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2346/169/0/Oct2011_P2.java">141 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2346/170/0/P3.py">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2346/171/1/P4.py">66 (3/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2346/172/0/P5.py">0 (0/5)</a></td>
+
+
+<td>342</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>50</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2403">Veggies</a>
+	
+</td>
+<td>SATEC @ W. A. Porter C. I.</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2403/168/1/Module1.vb">117 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2403/169/1/Module1.vb">115 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2403/171/1/Module1.vb">109 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2403/172/0/Module1.vb">0 (0/5)</a></td>
+
+
+<td>341</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>51</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2260">What The Java</a>
+	
+</td>
+<td>Leaside High School</td>
+
+
+
+
+
+
+
+<td>110 (5/5)</td>
+
+
+
+
+
+<td>111 (5/5)</td>
+
+
+
+
+
+<td>0 (0/5)</td>
+
+
+
+
+
+<td>115 (5/5)</td>
+
+
+
+
+
+<td></td>
+
+
+<td>336</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>52</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2457">HyacintheThistlethorps</a>
+	
+</td>
+<td>Ursula Franklin Academy</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2457/168/1/Q1.java">87 (4/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2457/169/0/Q2.java">130 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2457/170/0/Q3.java">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2457/171/0/Q4.java">118 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2457/172/0/Q3.java">0 (0/5)</a></td>
+
+
+<td>335</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>53</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2332">MGS-Minds Generate Software</a>
+	
+</td>
+<td>Don Mills Collegiate Institute</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2332/168/0/Problem1.java">84 (3/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2332/169/0/Problem2.java">131 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2332/171/0/Problem4.java">116 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2332/172/0/Problem5.java">0 (0/5)</a></td>
+
+
+<td>331</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>54</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2477">js?</a>
+	
+</td>
+<td>A. Y. Jackson Secondary School</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2477/168/1/ContestQuestion1.java">86 (4/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2477/169/0/contestQ2.java">124 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2477/171/0/ContestQuestion4.java">118 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>328</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>55</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/499">KILL DASH NINE</a>
+	
+</td>
+<td>A B Lucas</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/499/168/1/KD9_1.py">128 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/499/169/0/KD9_2.py">140 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/499/170/0/KD9_3.py">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/499/171/1/KD9_4.py">55 (2/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/499/172/0/KD9_5.py">0 (0/5)</a></td>
+
+
+<td>323</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>56</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2225">ZenStorm</a>
+	
+</td>
+<td>Victoria Park C.I.</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2225/168/0/Question_1.java">133 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2225/169/0/Question2.java">139 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2225/170/0/Question3.java">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2225/171/0/Question4.java">26 (1/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2225/172/1/Question_2.java">21 (1/5)</a></td>
+
+
+<td>319</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>57</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2428">using namespace std;</a>
+	
+</td>
+<td>Waterloo Collegiate Institute</td>
+
+
+
+
+
+
+
+<td>0 (0/5)</td>
+
+
+
+
+
+<td>136 (5/5)</td>
+
+
+
+
+
+<td>59 (2/5)</td>
+
+
+
+
+
+<td>124 (5/5)</td>
+
+
+
+
+
+<td></td>
+
+
+<td>319</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>58</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/1711">Calcoolus</a>
+	
+</td>
+<td>Marc Garneau C.I.</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1711/168/0/problem1.java">96 (4/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1711/169/1/Dwite2.java">123 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1711/170/0/Dwite3.java">51 (2/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1711/171/0/dwite.java">44 (1/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1711/172/0/problem5.java">0 (0/5)</a></td>
+
+
+<td>314</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>59</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/1641">FUD</a>
+	
+</td>
+<td>Don Mills Collegiate Institute</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1641/168/0/Dwite1.java">138 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1641/169/0/Dwite2.java">135 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1641/170/0/Dwite3.java">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1641/171/0/Dwite4.java">39 (1/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1641/172/0/Dwite5.java">0 (0/5)</a></td>
+
+
+<td>312</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>60</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2179">main(a){printf(a="main(a){printf(a=%c%s%c,34,a,34);}",34,a,34);} </a>
+	
+</td>
+<td>Vincent Massey</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2179/168/0/DWITE1.cpp">136 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2179/169/0/DWITE2.cpp">130 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2179/170/0/DWITE3.cpp">45 (2/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>311</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>61</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/987">Programmers</a>
+	
+</td>
+<td>Leaside High School</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/987/168/0/Q1.java">69 (3/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/987/169/0/Q2.java">130 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/987/171/0/Q4.java">111 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>310</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>62</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2086">khayam</a>
+	
+</td>
+<td>alghadir</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2086/168/0/A.cpp">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2086/169/0/B.cpp">137 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2086/170/0/C.cpp">33 (1/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2086/171/0/C.cpp">133 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>303</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>63</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/857">BEAT_TEMPEST</a>
+	
+</td>
+<td>Sir John A. Macdonald C.I.</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/857/168/0/dw1.py">139 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/857/169/0/dw2.py">135 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/857/170/0/dw3.py">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/857/171/0/dw3.py">28 (1/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>302</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>64</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/1403">Jim</a>
+	
+</td>
+<td>Waterloo Collegiate Institute</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1403/168/0/main.cpp">52 (1/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1403/169/1/p2.cpp">129 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1403/170/0/p3.cpp">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1403/171/1/p4.cpp">120 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1403/172/0/p5.cpp">0 (0/5)</a></td>
+
+
+<td>301</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>65</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2230">St. Andrew's Pwnage</a>
+	
+</td>
+<td>St. Andrew's College</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2230/168/1/p1.java">126 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2230/169/0/p2.java">137 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2230/170/0/p3.java">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2230/171/0/p4.java">37 (1/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>300</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>66</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2211">JoMak</a>
+	
+</td>
+<td>The Woodlands School</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2211/168/0/d1b.t">132 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2211/169/0/d2.t">130 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2211/170/0/d3.t">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2211/171/0/d4.t">36 (1/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2211/172/0/d5.t">0 (0/5)</a></td>
+
+
+<td>298</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>67</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2398">SkyNet</a>
+	
+</td>
+<td>A B Lucas</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2398/168/1/Arablish.java">38 (1/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2398/169/1/PennyGame.java">117 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2398/170/0/TakeAWalk.java">32 (1/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2398/171/0/coolNumbers.java">111 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2398/172/0/DesperateAttempt.java">0 (0/5)</a></td>
+
+
+<td>298</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>68</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2291">leekTomato</a>
+	
+</td>
+<td>W L Mackenzie CI</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2291/168/0/P1.java">113 (4/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2291/169/0/P2.java">139 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2291/170/0/P3.java">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2291/171/1/P3.java">44 (1/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>296</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>69</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/1901">Sirui</a>
+	
+</td>
+<td>Vincent Massey</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1901/168/1/p1.py">128 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1901/169/0/p2.py">141 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1901/170/0/p3.py">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1901/171/0/p4test.py">23 (1/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>292</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>70</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2357">Lambers</a>
+	
+</td>
+<td>E.L. Crossley</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2357/168/0/Q1.T">73 (2/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2357/169/0/Q2.T">134 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2357/170/0/Q3.T">73 (3/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2357/172/0/Q5.T">0 (0/5)</a></td>
+
+
+<td>280</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>71</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2273">童丞昱</a>
+	
+</td>
+<td>The Woodlands School</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2273/168/1/Q1.T">108 (4/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2273/169/0/Q2.T">142 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2273/170/0/Q3.T">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2273/171/0/Q4.T">29 (1/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>279</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>72</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/731">clrscr;</a>
+	
+</td>
+<td>Richmond Hill High School</td>
+
+
+
+
+
+
+
+<td>27 (1/5)</td>
+
+
+
+
+
+<td>139 (5/5)</td>
+
+
+
+
+
+<td>0 (0/5)</td>
+
+
+
+
+
+<td>111 (5/5)</td>
+
+
+
+
+
+<td></td>
+
+
+<td>277</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>73</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2424">The SSS</a>
+	
+</td>
+<td>Dr. Norman Bethune C.I.</td>
+
+
+
+
+
+
+
+<td>112 (4/5)</td>
+
+
+
+
+
+<td>130 (5/5)</td>
+
+
+
+
+
+<td>32 (1/5)</td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>274</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>74</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/26">Spongebob Microsystems</a>
+	
+</td>
+<td>Sir John A. Macdonald C.I.</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/26/168/0/S1.java">99 (4/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/26/169/0/S2.java">128 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/26/170/0/S3.java">44 (2/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/26/171/0/p4.cpp">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/26/172/0/S5.java">0 (0/5)</a></td>
+
+
+<td>271</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>75</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2412">Whargarbl</a>
+	
+</td>
+<td>Don Mills Collegiate Institute</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2412/168/0/PROBLEM1.py">137 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2412/169/0/PROBLEM2.py">130 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2412/171/0/PROBLEM4.py">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>267</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>76</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2415">qubikroot</a>
+	
+</td>
+<td>E.L. Crossley</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2415/168/0/1.py">135 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2415/169/0/2.py">131 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>266</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>77</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/811">Let Go</a>
+	
+</td>
+<td>Woburn Collegiate Institute</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/811/168/1/program1.pas">86 (3/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/811/169/0/ideone_UwEHA.pas">119 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/811/170/0/program1.pas">61 (2/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>266</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>78</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2242">PSVM</a>
+	
+</td>
+<td>Vincent Massey</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2242/168/1/problem1.py">128 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2242/169/0/problem2.py">137 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2242/170/0/problem3.py">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2242/171/0/problem4.py">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>265</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>79</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/1543">Glass</a>
+	
+</td>
+<td>SATEC @ W. A. Porter C. I.</td>
+
+
+
+
+
+
+
+<td>128 (5/5)</td>
+
+
+
+
+
+<td>37 (1/5)</td>
+
+
+
+
+
+<td>0 (0/5)</td>
+
+
+
+
+
+<td>67 (2/5)</td>
+
+
+
+
+
+<td>33 (1/5)</td>
+
+
+<td>265</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>80</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2296">C--</a>
+	
+</td>
+<td>Glenforest Secondary School</td>
+
+
+
+
+
+
+
+<td>108 (4/5)</td>
+
+
+
+
+
+<td>113 (5/5)</td>
+
+
+
+
+
+<td>40 (2/5)</td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>261</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>81</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2323">Tatsumaki Senpuukyaku</a>
+	
+</td>
+<td>White Oaks Secondary School</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2323/168/0/Program.py">20 (1/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2323/169/1/Program.py">107 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2323/171/0/Program.py">132 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>259</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>82</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2347">Sonic</a>
+	
+</td>
+<td>St. Francis Xavier Secondary School</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2347/168/0/P1.java">133 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2347/169/0/P2.java">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2347/171/0/P4.java">124 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>257</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>83</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2284">Unnamed.java</a>
+	
+</td>
+<td>W L Mackenzie CI</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2284/168/0/prob1.cpp">142 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2284/169/1/P2.java">114 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2284/170/0/P3.java">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2284/171/0/prob4.cpp">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>256</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>84</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2308">GSH - While (e_coyote)</a>
+	
+</td>
+<td>George S. Henry Academy</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2308/168/0/Arablish.java">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2308/169/0/Penny_game.java">129 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2308/171/0/C001.java">127 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>256</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>85</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2437">Kevster</a>
+	
+</td>
+<td>Vincent Massey</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2437/168/0/dwite1.py">140 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2437/169/0/dwite2.py">115 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2437/171/0/dwite4.py">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>255</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>86</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/775">Bored</a>
+	
+</td>
+<td>Don Mills Collegiate Institute</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/775/168/0/Exercise1.java">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/775/169/0/Exercise2.java">116 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/775/171/0/Excersize1.java">136 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>252</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>87</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2363">Inobjective C</a>
+	
+</td>
+<td>W L Mackenzie CI</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2363/168/0/module1.py">138 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2363/169/1/module3_number2.py">109 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>247</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>88</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2373">NoNameLtd</a>
+	
+</td>
+<td>Richview C.I.</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2373/168/1/untitled-2.py">103 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2373/169/1/test.py">103 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2373/171/0/test.py">39 (1/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>245</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>89</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2411">NERDZ OF DOOM</a>
+	
+</td>
+<td>Don Mills Collegiate Institute</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2411/168/0/Problem_1.py">128 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2411/169/1/Problem_2.py">114 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>242</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>90</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2266">FLiu777</a>
+	
+</td>
+<td>Don Mills Collegiate Institute</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2266/168/1/1.py">65 (2/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2266/169/0/2.py">134 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2266/171/0/4.py">39 (1/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>238</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>91</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2277">Azn</a>
+	
+</td>
+<td>Milliken Mills High School</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2277/168/0/dwite1.java">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2277/169/0/dwite2.java">121 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2277/171/1/dwite3.java">114 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>235</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>92</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2253">Team Absolute Bananas</a>
+	
+</td>
+<td>The Woodlands School</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2253/168/0/problem1.java">105 (4/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2253/169/0/problem2.java">128 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2253/170/0/problem3.java">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2253/171/0/problem4.java">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2253/172/0/problem5.java">0 (0/5)</a></td>
+
+
+<td>233</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>93</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/1019">Quantum Ghosts</a>
+	
+</td>
+<td>London Central Secondary School</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1019/168/0/main.cpp">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1019/169/0/prob2.t">143 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1019/170/0/prob3.t">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1019/171/0/prob4.t">88 (3/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1019/172/0/HI_JAYDEN_HOW_ARE_YOU_TODAY_SMILEYFACE.T">0 (0/5)</a></td>
+
+
+<td>231</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>94</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2290">Brony</a>
+	
+</td>
+<td>W L Mackenzie CI</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2290/168/0/Q1.java">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2290/169/0/Q2.java">43 (1/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2290/170/0/Q3.java">48 (2/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2290/171/0/Q4.java">137 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2290/172/0/Q5.java">0 (0/5)</a></td>
+
+
+<td>228</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>95</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2486">troll programming</a>
+	
+</td>
+<td>Albert Campbell Collegiate Institute</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2486/168/0/Problem1.java">135 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2486/169/0/Problem2.java">59 (2/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2486/171/1/Problem4.java">34 (1/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2486/172/0/Problem5.java">0 (0/5)</a></td>
+
+
+<td>228</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>96</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/1651">New Continent Discovery Club</a>
+	
+</td>
+<td>London Central Secondary School</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1651/168/1/Problem1.java">102 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1651/171/0/Problem4.java">124 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>226</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>97</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2218">Laruku</a>
+	
+</td>
+<td>The Woodlands School</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2218/168/1/d1.t">76 (3/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2218/169/1/d2.t">107 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2218/171/1/d4.t">43 (2/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>226</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>98</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2463">The One</a>
+	
+</td>
+<td>Vincent Massey S.S.</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2463/168/0/dwite1.py">142 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2463/169/0/dwite2.py">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2463/170/1/dwite3.py">83 (4/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2463/171/0/dwite4.py">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>225</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>99</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2450">Davidisgoodatmath</a>
+	
+</td>
+<td>A. Y. Jackson Secondary School</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2450/169/1/Question2.java">110 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2450/171/0/Coolness.java">112 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>222</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>100</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2251">afk</a>
+	
+</td>
+<td>John Fraser Secondary</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2251/170/0/q3.java">73 (3/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2251/171/0/question4.java">138 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>211</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>101</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2256">fnatic</a>
+	
+</td>
+<td>Saint Paul</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2256/168/0/number_1.t">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2256/169/1/pennies.t">120 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2256/170/0/question_3.t">20 (1/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2256/171/0/question_4.t">67 (2/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>207</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>102</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2344">1337-VB-HAX</a>
+	
+</td>
+<td>St. Francis Xavier Secondary School</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2344/169/1/Dwite2.java">88 (4/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2344/171/1/Dwite4.java">107 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>195</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>103</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2394">Poppalick</a>
+	
+</td>
+<td>Richview C.I.</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2394/168/0/contest_1.py">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2394/169/1/contest_2.py">106 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2394/170/0/untitled-4.py">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2394/171/1/contest_4.py">88 (4/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>194</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>104</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2441">Coolface</a>
+	
+</td>
+<td>E.L. Crossley</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2441/169/1/Problem2.t">114 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2441/171/1/Problem4.t">75 (3/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>189</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>105</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2317">Daniel Oxman?</a>
+	
+</td>
+<td>W L Mackenzie CI</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2317/168/1/PROB1.java">51 (1/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2317/169/1/PROB2.java">90 (3/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2317/171/0/PROB4.java">48 (1/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>189</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>106</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2065">Better than Drew and Paul</a>
+	
+</td>
+<td>E.L. Crossley</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2065/168/0/1.cpp">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2065/169/0/2.cpp">141 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2065/170/0/3.cpp">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2065/171/0/3.cpp">46 (1/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2065/172/0/5.cpp">0 (0/5)</a></td>
+
+
+<td>187</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>107</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2207">Error 404</a>
+	
+</td>
+<td>St Theresa</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2207/168/0/Dwite_1_1.py">75 (3/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2207/169/0/Dwite_2_1.py">111 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2207/171/0/Dwite_4_1.py">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>186</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>108</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2401">nk_</a>
+	
+</td>
+<td>Newmarket HS</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2401/168/0/J1.java">132 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2401/171/1/J4.java">45 (2/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2401/172/0/J5.java">0 (0/5)</a></td>
+
+
+<td>177</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>109</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2434">Last Place</a>
+	
+</td>
+<td>The Woodlands School</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2434/168/0/1.t">63 (2/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2434/169/0/2.t">114 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>177</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>110</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2320">Turing &lt; Python</a>
+	
+</td>
+<td>Iroquois Ridge High School</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2320/169/1/Q2.t">120 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2320/171/0/Q4.t">48 (2/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>168</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>111</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/1771">AznsWillRuleTheWorld</a>
+	
+</td>
+<td>Vincent Massey</td>
+
+
+
+
+
+
+
+<td>0 (0/5)</td>
+
+
+
+
+
+<td>136 (5/5)</td>
+
+
+
+
+
+<td>29 (1/5)</td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>165</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>112</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2205">Awesome</a>
+	
+</td>
+<td>Earl Haig Secondary School</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2205/168/0/main.cpp">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2205/169/0/GG2.cpp">132 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2205/170/0/q3.cpp">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2205/171/0/main.cpp">33 (1/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2205/172/0/main_-_Copy.cpp">0 (0/5)</a></td>
+
+
+<td>165</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>113</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2212">...</a>
+	
+</td>
+<td>Victoria Park C.I.</td>
+
+
+
+
+
+
+
+<td>0 (0/5)</td>
+
+
+
+
+
+<td>47 (1/5)</td>
+
+
+
+
+
+<td>0 (0/5)</td>
+
+
+
+
+
+<td>115 (5/5)</td>
+
+
+
+
+
+<td>0 (0/5)</td>
+
+
+<td>162</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>114</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2449">ACSBG2</a>
+	
+</td>
+<td>Vincent Massey</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2449/169/0/problem2.py">129 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2449/170/0/problem3.py">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2449/171/0/problem4.py">32 (1/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>161</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>115</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2149">&lt;iostream&gt;</a>
+	
+</td>
+<td>A B Lucas</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2149/168/0/Dwite.cpp">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2149/169/1/DWITE2.T">119 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2149/171/1/dwite4.cpp">34 (1/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>153</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>116</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2321">Teenage Mexican Ninja Turtles</a>
+	
+</td>
+<td>Richview C.I.</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2321/168/0/1_problem_1.py">61 (2/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2321/169/0/1_problem_2.py">91 (4/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2321/171/0/1_problem_4.py">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2321/172/0/1_problem_5.py">0 (0/5)</a></td>
+
+
+<td>152</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>117</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2464">Zero Cookies Banana Squad</a>
+	
+</td>
+<td>Don Mills Collegiate Institute</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2464/168/0/Problem1.java">37 (1/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2464/169/0/Test.java">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2464/171/0/Submission.java">113 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>150</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>118</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2257">pcss_warriors</a>
+	
+</td>
+<td>port credit secondary school</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2257/168/0/p1.c">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2257/169/0/p2.c">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2257/170/0/p3.c">22 (1/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2257/171/0/p4.c">125 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>147</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>119</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/1623">The Amish Programmers</a>
+	
+</td>
+<td>Richview C.I.</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1623/168/0/prob1.py">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1623/169/1/prob2.py">123 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1623/171/0/prob4.py">20 (1/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>143</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>120</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2432">The Counter SSS</a>
+	
+</td>
+<td>Dr. Norman Bethune C.I.</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2432/168/1/Q1.py">123 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2432/169/0/untitled-1.py">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2432/171/1/Q4.py">20 (1/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>143</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>121</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/1725">lisgarppls</a>
+	
+</td>
+<td>Lisgar Collegiate Institute</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1725/169/0/2.cpp">141 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>141</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>122</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2282">RGSS1</a>
+	
+</td>
+<td>Richmond Green Secondary School</td>
+
+
+
+
+
+
+
+<td>100 (4/5)</td>
+
+
+
+
+
+<td>38 (1/5)</td>
+
+
+
+
+
+<td>0 (0/5)</td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>138</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>123</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2356">(1/0)^2</a>
+	
+</td>
+<td>Sir John A. Macdonald Secondary School</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2356/168/0/Main.java">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2356/169/0/D2.java">117 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2356/170/0/III.java">20 (1/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2356/171/0/Main.java">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2356/172/0/D5.java">0 (0/5)</a></td>
+
+
+<td>137</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>124</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2272">IMNesTea</a>
+	
+</td>
+<td>The Woodlands School</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2272/168/0/D1.py">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2272/169/0/D2.py">134 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>134</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>125</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2360">Moo?</a>
+	
+</td>
+<td>E.L. Crossley</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2360/168/0/Q1.py">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2360/169/0/Q2.py">132 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>132</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>126</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/1307">antybash</a>
+	
+</td>
+<td>Waterloo Collegiate Institute</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1307/168/0/1.cpp">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1307/169/1/2.cpp">131 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>131</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>127</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2448">import antigravity</a>
+	
+</td>
+<td>Vincent Massey</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2448/168/0/Program_1.py">130 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2448/171/0/Program_3.py">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>130</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>128</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2343">negatively curved manifolds </a>
+	
+</td>
+<td>St. Francis Xavier Secondary School</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2343/168/0/P1.py">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2343/169/0/main.c">129 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>129</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>129</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2019">SoZettaSlow</a>
+	
+</td>
+<td>Woburn Collegiate Institute</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2019/168/1/Dwiteprb1.pas">21 (1/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2019/171/1/Dwitetest.pas">107 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>128</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>130</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2421">Pi Is Exactly 3!</a>
+	
+</td>
+<td>Forest Heights Collegiate</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2421/169/0/afasdf.java">128 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2421/171/0/Round1Problem4.java">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>128</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>131</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2250">alathena</a>
+	
+</td>
+<td>Bloor Collegiate Institute</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2250/168/0/dWite1.cpp">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2250/169/0/dWite2.cpp">125 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>125</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>132</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2280">Nibbles n Bits</a>
+	
+</td>
+<td>Michael Power/St. Joseph</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2280/169/0/Qusetion2.java">122 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>122</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>133</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2299">grenade launchers</a>
+	
+</td>
+<td>Glenforest Secondary School</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2299/168/0/asd.py">122 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2299/171/0/cool.py">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2299/172/0/cool.py">0 (0/5)</a></td>
+
+
+<td>122</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>134</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2393">DarkMatter</a>
+	
+</td>
+<td>Sir John A. Macdonald Secondary School</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2393/169/0/Problem2.java">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2393/171/0/Main.java">121 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>121</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>135</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2408">Won The Contest, Lost The Game</a>
+	
+</td>
+<td>Richview C.I.</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2408/168/0/1.py">120 (5/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2408/169/0/2.py">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2408/171/0/4.py">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2408/172/0/5.py">0 (0/5)</a></td>
+
+
+<td>120</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>136</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2322">Ayah</a>
+	
+</td>
+<td>John Fraser Secondary</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2322/168/0/code.cpp">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2322/169/1/code.cpp">119 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2322/171/0/code.cpp">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>119</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>137</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2478">Shio's Dream</a>
+	
+</td>
+<td>Don Mills Collegiate Institute</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2478/168/0/Dwite1.java">85 (3/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2478/171/0/Dwite4.java">32 (1/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>117</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>138</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2227">AEGLE</a>
+	
+</td>
+<td>Crescent School</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2227/168/0/Problem1.java">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2227/169/1/Problem2.java">116 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>116</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>139</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2417">OnPeter'sBack</a>
+	
+</td>
+<td>Sir John A. Macdonald C.I.</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2417/168/0/DWITER1P1.java">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2417/169/0/DWITER1P2.java">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2417/171/0/DWITER1P4.java">114 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>114</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>140</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2281">Femme</a>
+	
+</td>
+<td>Earl Haig Secondary School</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2281/168/0/Q1.py">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2281/169/0/Q2.py">112 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2281/171/0/Q4.py">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2281/172/0/Q5.py">0 (0/5)</a></td>
+
+
+<td>112</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>141</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2443">Nyan cat</a>
+	
+</td>
+<td>Milliken Mills High School</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2443/168/0/Test.java">112 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>112</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>142</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2409">_Dwite</a>
+	
+</td>
+<td>Richview C.I.</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2409/168/1/untitled-1.py">71 (3/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2409/169/0/PENNY.py">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2409/171/0/untitled-2.py">40 (1/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>111</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>143</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/1983">Rays from Pandora</a>
+	
+</td>
+<td>Victoria Park C.I.</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1983/168/0/R1P1_F.java">110 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>110</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>144</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2312">Loopception</a>
+	
+</td>
+<td>Mississauga Secondary School</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2312/168/0/Problem1.java">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2312/169/0/Problem2.java">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2312/171/0/Problem4.java">110 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>110</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>145</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2420">RSS</a>
+	
+</td>
+<td>Albert Campbell Collegiate Institute</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2420/168/0/ProblemOne.java">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2420/169/0/Problem2.java">110 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>110</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>146</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2381">Bayview Team Two</a>
+	
+</td>
+<td>Bayview Secondary School</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2381/169/1/Problem_2.cpp">104 (5/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>104</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>147</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2423">I Cause Lag</a>
+	
+</td>
+<td>Vincent Massey</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2423/168/1/arabic.py">92 (4/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2423/169/0/pennygame.py">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2423/171/0/coolness.py">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>92</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>148</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2283">CCCP</a>
+	
+</td>
+<td>W L Mackenzie CI</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2283/169/1/Problem2.java">56 (2/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2283/171/0/Problem4.java">35 (1/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2283/172/0/Problem5.java">0 (0/5)</a></td>
+
+
+<td>91</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>149</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2289">Dan Z.</a>
+	
+</td>
+<td>W L Mackenzie CI</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2289/168/1/Q1.java">91 (3/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2289/171/0/Q4.java">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2289/172/0/Q2.java">0 (0/5)</a></td>
+
+
+<td>91</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>150</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/717">beef-cheese</a>
+	
+</td>
+<td>Lisgar Collegiate Institute</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/717/168/0/1.cpp">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/717/169/0/2.cpp">49 (1/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/717/171/0/Q4.cpp">41 (1/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>90</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>151</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2378">HNNNNNNNNG</a>
+	
+</td>
+<td>Brampton Centennial Secondary School</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2378/168/0/ab.java">32 (1/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2378/169/0/pennies2.java">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2378/171/0/COOLNESS.java">55 (2/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2378/172/0/trollolol.java">0 (0/5)</a></td>
+
+
+<td>87</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>152</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/1443">ADDITIONAL-PYLONS-REQUIRED</a>
+	
+</td>
+<td>Rick Hansen S.S.</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1443/168/1/q1.java">47 (1/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1443/169/0/q2.java">37 (1/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1443/171/0/q3.java">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>84</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>153</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2333">BrownCurryMasters</a>
+	
+</td>
+<td>Middlefield Collegiate Institute</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2333/169/1/dwite2.java">68 (2/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2333/171/0/dwite4.java">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>68</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>154</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2274">350 APM</a>
+	
+</td>
+<td>Richmond Hill High School</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2274/168/0/ArablishNumbers.java">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2274/169/0/Q2.java">35 (1/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2274/171/0/Q4.java">31 (1/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>66</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>155</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2395">n3gative zer0</a>
+	
+</td>
+<td>Bluevale Collegiate Institute</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2395/168/0/Problem_1.py">63 (3/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>63</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>156</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2340">RGSS3</a>
+	
+</td>
+<td>Richmond Green Secondary School</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2340/168/0/Program.cs">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2340/169/0/Program.cs">34 (1/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2340/171/0/Program.cs">28 (1/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>62</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>157</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2468">Purple</a>
+	
+</td>
+<td>Forest Heights Collegiate</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2468/171/0/Dwite_problem_2.java">55 (2/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>55</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>158</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2465">The Moose Geckos</a>
+	
+</td>
+<td>White Oaks Secondary School</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2465/168/0/A1Q2.py">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2465/169/0/Question_2_Dwite.py">48 (1/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2465/170/0/Question_5.py">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>48</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>159</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2466">Get Money Get Paid!</a>
+	
+</td>
+<td>White Oaks Secondary School</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2466/168/0/prob_1.t">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2466/169/0/prob_2.t">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2466/170/0/prob_3.t">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2466/171/0/prob_4.t">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2466/172/1/prob_5.t">48 (1/5)</a></td>
+
+
+<td>48</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>160</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/1817">The DJ That Programs</a>
+	
+</td>
+<td>Richview C.I.</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1817/168/0/q1.py">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1817/171/0/q4.py">46 (2/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>46</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>161</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2327">4guys 1computer</a>
+	
+</td>
+<td>Brampton Centennial Secondary School</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2327/168/0/problem1.java">46 (2/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2327/169/0/prob2.java">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2327/171/0/problem4.java">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2327/172/0/prob5.java">0 (0/5)</a></td>
+
+
+<td>46</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>162</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2467">eL33Ts</a>
+	
+</td>
+<td>Forest Heights Collegiate</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2467/168/0/contest.java">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2467/169/0/Oct_26_2011.java">44 (1/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>44</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>163</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2445">The Best Post-Modernist Computer Science Geek On Your Street</a>
+	
+</td>
+<td>Vincent Massey</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2445/168/0/DWITE1.py">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2445/169/0/DWITE2.py">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2445/170/0/DWITE3.py">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2445/171/0/DWITE4.py">41 (1/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2445/172/0/DWITE5.py">0 (0/5)</a></td>
+
+
+<td>41</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>164</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2294">SSSSOS</a>
+	
+</td>
+<td>Glenforest Secondary School</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2294/169/0/SSSSOS2.py">38 (1/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2294/170/0/SSSSOS3.py">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2294/171/0/SSSSOS4.py">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>38</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>165</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2224">YouMad</a>
+	
+</td>
+<td>The Woodlands School</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2224/168/0/FILE1.T">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2224/169/0/FILE2.T">37 (1/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2224/170/0/FILE3.t">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2224/171/0/FILE4.t">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>37</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>166</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/1401">Wait 4me Loo</a>
+	
+</td>
+<td>Sir John A. Macdonald C.I.</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/1401/171/1/dw3.py">37 (1/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>37</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>167</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2410">lala</a>
+	
+</td>
+<td>Albert Campbell Collegiate Institute</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2410/169/0/Question2.java">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2410/170/0/Phoenix,_Damon_Li.java">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2410/171/0/C001.java">37 (1/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2410/172/0/Question5.java">0 (0/5)</a></td>
+
+
+<td>37</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>168</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2371">THETROLLZ</a>
+	
+</td>
+<td>Middlefield Collegiate Institute</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2371/168/0/Question1.java">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2371/169/1/Question2.java">32 (1/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2371/171/0/Question4.java">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>32</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>169</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2444">PeterHarquail</a>
+	
+</td>
+<td>Crescent School</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2444/169/0/Question2.java">32 (1/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>32</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>170</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2364">Harmonic Rainbow Bunnies</a>
+	
+</td>
+<td>W L Mackenzie CI</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2364/169/0/P2.java">31 (1/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2364/171/0/P4.java">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>31</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>171</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2278">My.Butt.Talks.</a>
+	
+</td>
+<td>John Fraser Secondary</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2278/168/0/Dwite1.t">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2278/169/0/Dwite2.t">29 (1/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2278/171/0/fileio.t">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2278/172/0/CHEAT_Q5.T">0 (0/5)</a></td>
+
+
+<td>29</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>172</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2341">RGSS4</a>
+	
+</td>
+<td>Richmond Green Secondary School</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2341/171/0/DwiteContest4main.cpp">25 (1/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>25</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>173</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2375">THUNDERCATS</a>
+	
+</td>
+<td>Richview C.I.</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2375/168/0/Arab-lish_Numbers.py">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2375/169/0/Penny_game.py">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2375/170/0/untitled-1.py">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2375/171/0/C001_Numbers.py">23 (1/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>23</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>174</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2442">Solo Person</a>
+	
+</td>
+<td>Glenforest Secondary School</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2442/168/0/Problem_1.cpp">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2442/169/0/Problem_2.cpp">22 (1/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2442/170/0/Problem_3.cpp">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2442/171/0/Problem_4.cpp">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>22</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>175</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2402">Kung Foo Pandas</a>
+	
+</td>
+<td>W L Mackenzie CI</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2402/168/0/Reverser.java">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2402/171/0/NumberCoolness.java">21 (1/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>21</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>176</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2471">Sigma</a>
+	
+</td>
+<td>John F. Ross C.V.I.</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2471/169/0/problem2.py">21 (1/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>21</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>177</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2235">Beat d310</a>
+	
+</td>
+<td>Woburn Collegiate Institute</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>178</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2201">RazvanDavid</a>
+	
+</td>
+<td>Brebeuf College School</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2201/168/0/ArabLish.java">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2201/171/0/C001Numbers.java">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>179</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/1921">THE Black Ops</a>
+	
+</td>
+<td>Albert Campbell Collegiate Institute</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>180</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2221">Hahd</a>
+	
+</td>
+<td>The Woodlands School</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>181</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2210">                    ninjaxed!</a>
+	
+</td>
+<td>Bell High School</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>182</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2240">THE NOGS</a>
+	
+</td>
+<td>Sir John A. Macdonald Secondary School</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>183</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/1631">Sandwich Sabres</a>
+	
+</td>
+<td>Sandwich Secondary School</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>184</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2220">CreepTumor</a>
+	
+</td>
+<td>The Woodlands School</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>185</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/1229">Mad Russians</a>
+	
+</td>
+<td>Richmond Hill High School</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>186</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/809">Rammstein</a>
+	
+</td>
+<td>Richmond Hill High School</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>187</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2215">CZT</a>
+	
+</td>
+<td>The Woodlands School</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>188</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2270">BeginnerCompany</a>
+	
+</td>
+<td>The Woodlands School</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>189</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/1517">ID10T Error</a>
+	
+</td>
+<td>The Woodlands School</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>190</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2264">Pasokon</a>
+	
+</td>
+<td>Milliken Mills High School</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2264/168/0/MEGADERP.py">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2264/171/0/problem_4.py">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>191</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/1057">Monty Python</a>
+	
+</td>
+<td>MM Robinson</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>192</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2293">Hello? </a>
+	
+</td>
+<td>W L Mackenzie CI</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>193</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2295">☺☺☺</a>
+	
+</td>
+<td>Glenforest Secondary School</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>194</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2298">ERR0R</a>
+	
+</td>
+<td>Glenforest Secondary School</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>195</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2314">bwaaaa</a>
+	
+</td>
+<td>Crescent School</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>196</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2315">Eote</a>
+	
+</td>
+<td>Moira Secondary School</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>197</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2316">My Team of Friends</a>
+	
+</td>
+<td>Ursula Franklin Academy</td>
+
+
+
+
+
+
+
+<td>0 (0/5)</td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>198</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2247">Exodus</a>
+	
+</td>
+<td>Sir John A Macdonald</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>199</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2318">psionicscv</a>
+	
+</td>
+<td>Victoria Park C.I.</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>200</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2309">DumbNDumber</a>
+	
+</td>
+<td>Mississauga Secondary School</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>201</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2313">2% Milk.</a>
+	
+</td>
+<td>Mississauga Secondary School</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2313/168/0/assignmentone.java">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2313/169/0/projecttwo.java">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2313/170/0/projectthree.java">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2313/171/0/projectfour.java">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>202</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2324">Decapitated Snowcone</a>
+	
+</td>
+<td>Brampton Centennial Secondary School</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>203</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/777">CCM</a>
+	
+</td>
+<td>Don Mills Collegiate Institute</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>204</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2262">Super Foigs</a>
+	
+</td>
+<td>Thornlea S.S.</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>205</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2345">Mr.ReidAbandonedUs</a>
+	
+</td>
+<td>St. Francis Xavier Secondary School</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2345/168/0/ArablishNumbers.java">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>206</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2350">RiceEaters</a>
+	
+</td>
+<td>Sir John A. Macdonald C.I.</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>207</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2335">msngirls</a>
+	
+</td>
+<td>Middlefield Collegiate Institute</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2335/168/0/Problem1.java">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2335/169/0/Problem2.java">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>208</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2334">MMG</a>
+	
+</td>
+<td>Middlefield Collegiate Institute</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2334/169/0/problem2.java">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2334/171/0/problem4.java">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>209</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2362">RGSS TECH GUYS</a>
+	
+</td>
+<td>Richmond Green Secondary School</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>210</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2366">WDNWTDT.java</a>
+	
+</td>
+<td>W L Mackenzie CI</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>211</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2367">Name</a>
+	
+</td>
+<td>W L Mackenzie CI</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2367/168/0/Problem1.t">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>212</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2369">Semantic Error</a>
+	
+</td>
+<td>W L Mackenzie CI</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2369/168/0/Arablish.java">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>213</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2368">3_people^carrying-Reyaz</a>
+	
+</td>
+<td>port credit secondary school</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>214</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2339">RGSS2</a>
+	
+</td>
+<td>Richmond Green Secondary School</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2339/171/0/test.c">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>215</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2374">RGSS Robot Boys</a>
+	
+</td>
+<td>Richmond Green Secondary School</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2374/168/0/Class1.cs">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>216</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2377">Good Game.</a>
+	
+</td>
+<td>W L Mackenzie CI</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2377/168/0/Arablish.java">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>217</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2376">Heisenberg</a>
+	
+</td>
+<td>Middlefield Collegiate Institute</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2376/169/0/Penny.java">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>218</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2379">gRpRice</a>
+	
+</td>
+<td>The Woodlands School</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>219</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/1455">Teh Apex</a>
+	
+</td>
+<td>Brampton Centennial Secondary School</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>220</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2380">RaceCar</a>
+	
+</td>
+<td>Sir John A. Macdonald Secondary School</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>221</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2383">Stupid Horse</a>
+	
+</td>
+<td>St. Thomas Aquinas CSS</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>222</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2252">while success!=True: "keep trying"</a>
+	
+</td>
+<td>Vincent Massey S.S.</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>223</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2336">Dis [ ]</a>
+	
+</td>
+<td>Bluevale Collegiate Institute</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2336/168/0/dwiteOct1.java">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>224</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2337">The Pregaphone</a>
+	
+</td>
+<td>Bluevale Collegiate Institute</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2337/168/0/P1.java">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2337/169/0/P2.java">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2337/171/0/P4.java">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>225</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2338">tripleSix</a>
+	
+</td>
+<td>Bluevale Collegiate Institute</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>226</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2389">Athena</a>
+	
+</td>
+<td>Crescent School</td>
+
+
+
+
+
+
+
+<td>0 (0/5)</td>
+
+
+
+
+
+<td>0 (0/5)</td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>227</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2388">The Programming Buffs</a>
+	
+</td>
+<td>Bluevale Collegiate Institute</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2388/168/0/Question1.c">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>228</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2390">LionEagle</a>
+	
+</td>
+<td>Crescent School</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2390/171/0/Dwite2.java">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>229</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2397">calvintan</a>
+	
+</td>
+<td>St. Francis Xavier Secondary School</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>230</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2391">Orange Pekoe</a>
+	
+</td>
+<td>Milliken Mills High School</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2391/168/0/C001_Numbers.frm">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>231</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2399">Friendship is Magic</a>
+	
+</td>
+<td>Bluevale Collegiate Institute</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>232</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2404">Sole Survivor</a>
+	
+</td>
+<td>Don Mills Collegiate Institute</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>233</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2405">Copy + Paste</a>
+	
+</td>
+<td>Richview C.I.</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>234</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2307">GSH C.A.R.S.</a>
+	
+</td>
+<td>George S. Henry Academy</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2307/168/0/Gsh_Cars_Dwite1.java">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>235</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2406">REVOLUTION</a>
+	
+</td>
+<td>Sir John A. Macdonald Secondary School</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2406/168/0/Problem1.java">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2406/171/0/Dwite4.cpp">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2406/172/0/Dwite5.cpp">0 (0/5)</a></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>236</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2414">allYourBase</a>
+	
+</td>
+<td>John Fraser Secondary</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>237</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2416">channyboyz</a>
+	
+</td>
+<td>John Fraser Secondary</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2416/168/0/q1.t">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2416/169/0/q2.t">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>238</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2419">Exodus</a>
+	
+</td>
+<td>Sir John A. Macdonald Secondary School</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2419/168/0/Problem1.java">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2419/169/0/Ex1_1.java">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2419/171/0/Problem4.java">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>239</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2370">sudo /a make_sandwich</a>
+	
+</td>
+<td>port credit secondary school</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2370/171/0/2011_4.cpp">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>240</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2422">Beast</a>
+	
+</td>
+<td>Vincent Massey S.S.</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>241</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2427">-insert-name-here-</a>
+	
+</td>
+<td>Vincent Massey S.S.</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>242</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2354">RiceEaters</a>
+	
+</td>
+<td>Sir John A. Macdonald C.I.</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2354/168/0/Problem1.java">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2354/169/0/Problem2.java">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>243</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2429">goodnight</a>
+	
+</td>
+<td>Glenforest Secondary School</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>244</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2352">Lights</a>
+	
+</td>
+<td>Sir John A. Macdonald C.I.</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2352/168/0/DWITE1.PAS">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2352/169/0/DWITE2.PAS">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2352/170/0/DWITE3.PAS">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>245</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2400">Hatr</a>
+	
+</td>
+<td>Victoria Park C.I.</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2400/168/0/dwiteoct.t">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2400/169/0/MenuTester.java">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>246</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2426">CoolCarrot</a>
+	
+</td>
+<td>Victoria Park C.I.</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2426/168/0/Problem1.java">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2426/169/0/Problem22.java">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>247</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2430">This compiler has been pulled...</a>
+	
+</td>
+<td>Vincent Massey</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>248</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2431">The Best Post-Modernist Computer Science Geek On Your Stree</a>
+	
+</td>
+<td>Vincent Massey</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>249</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2433">Fourier</a>
+	
+</td>
+<td>Dr. Norman Bethune C.I.</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>250</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2261">Assorted Tomfoolery</a>
+	
+</td>
+<td>Iroquois Ridge High School</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>251</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2348">Challenge Accepted</a>
+	
+</td>
+<td>Glenforest Secondary School</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>252</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/1759">Code::Rocks</a>
+	
+</td>
+<td>Waterloo Collegiate Institute</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>253</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2438">allYourBaseAreBelong</a>
+	
+</td>
+<td>John Fraser Secondary</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>254</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/583">Cyril</a>
+	
+</td>
+<td>Don Mills Collegiate Institute</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>255</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2446">SlimeBall</a>
+	
+</td>
+<td>Middlefield Collegiate Institute</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>256</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2447">AnythingJin</a>
+	
+</td>
+<td>Albert Campbell Collegiate Institute</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2447/171/0/C001Number.java">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>257</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2451">yog-soth-oth</a>
+	
+</td>
+<td>Don Mills Collegiate Institute</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>258</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2452">Muddy Water</a>
+	
+</td>
+<td>Vincent Massey</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>259</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2453">my team</a>
+	
+</td>
+<td>A. Y. Jackson Secondary School</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>260</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2456">Azn0</a>
+	
+</td>
+<td>Vincent Massey</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>261</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2458">trollface.jpg</a>
+	
+</td>
+<td>A. Y. Jackson Secondary School</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2458/168/0/Problem1.java">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2458/169/0/Problem2.java">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2458/171/0/Problem4.java">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>262</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2459">_________________</a>
+	
+</td>
+<td>Don Mills Collegiate Institute</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>263</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2461">Sysneg Corporation</a>
+	
+</td>
+<td>Don Mills Collegiate Institute</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>264</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2413">|PandaPuffers|</a>
+	
+</td>
+<td>E.L. Crossley</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2413/169/0/PennyGame.t">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>265</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2460">Lac and JC</a>
+	
+</td>
+<td>Ursula Franklin Academy</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>266</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2473">Ted's</a>
+	
+</td>
+<td>Don Mills Collegiate Institute</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>267</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2475">Virtual Harem</a>
+	
+</td>
+<td>Don Mills Collegiate Institute</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>268</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2349">Spice Girls + Tudor</a>
+	
+</td>
+<td>Glenforest Secondary School</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2349/168/0/Q1.py">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>269</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2355">Team</a>
+	
+</td>
+<td>Sir John A. Macdonald C.I.</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>270</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2304">GSH Jaynesh</a>
+	
+</td>
+<td>George S. Henry Academy</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2304/169/0/PennyGame.java">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>271</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2484">dumb^2 = -1</a>
+	
+</td>
+<td>Milliken Mills High School</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2484/168/0/Form1.frm">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2484/171/0/Form1.frm">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>272</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2396">Pokemen Programers</a>
+	
+</td>
+<td>St. Augustine S. S.</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>273</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/1301">Teh Pwnerers</a>
+	
+</td>
+<td>St. Augustine S. S.</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>274</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/1727">Fubuki</a>
+	
+</td>
+<td>St. Augustine S. S.</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>275</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/1729">Hyperion Minerva</a>
+	
+</td>
+<td>St. Augustine S. S.</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>276</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/1365">St. Augustine 2</a>
+	
+</td>
+<td>St. Augustine S. S.</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>277</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2480">Dennis ZHao</a>
+	
+</td>
+<td>Dr.Norman Bethune</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2480/168/0/Question_1.py">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2480/171/0/Q-4.py">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>278</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2485">AM&amp;MA</a>
+	
+</td>
+<td>St. Joan of Arc CSS</td>
+
+
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>279</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2482">The Team</a>
+	
+</td>
+<td>John F. Ross C.V.I.</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2482/168/0/main.cpp">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2482/169/0/main.cpp">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2482/170/0/main.cpp">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2482/171/0/main.cpp">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2482/172/0/main.cpp">0 (0/5)</a></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row2">
+<td>280</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2300">P=NP</a>
+	
+</td>
+<td>Michael Power/St. Joseph</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2300/168/0/S01.java">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2300/169/0/S2.java">0 (0/5)</a></td>
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2300/170/0/S3.java">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+
+<tr class="row1">
+<td>281</td>
+<td>
+	
+
+	
+		<a href="http://dwite.ca/home/team/2305">GSH guvernment</a>
+	
+</td>
+<td>George S. Henry Academy</td>
+
+
+
+
+
+
+
+<td><a href="http://dwite.ca/uploads/wkhv43rq1atn7eu/2305/168/0/Arab_lish_Numbers.java">0 (0/5)</a></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+
+
+
+<td></td>
+
+
+<td>0</td>
+</tr>
+
+
+
+</tbody></table>
+
+
+
+</div>
+
+        
+		   <p></p>
+
+		</div>
+		 
+		<div class="clear"></div> 
+	 
+	</div>
+	</div>
+	</div>
+
+	<div id="footer_box">
+		<p class="google_friendly"><a href="http://dwite.ca/">Home</a> | <a href="http://dwite.ca/about">About</a> | <a href="http://dwite.ca/rules">Rules</a> | <a href="http://dwite.ca/contact">Contact</a> | <a href="http://dwite.ca/register">Registration</a> | <a href="http://dwite.ca/login">Login</a></p>
+    <center><a href="http://dwite.ca/rss"><img alt="Icon-rss" src="46_files/icon-rss.gif" border="0"></a></center>
+		<p class="name">DWITE Online Computer Programming Contest</p>
+		<p>Copyright <a href="http://dwite.ca/">DWITE</a>, <a href="http://compsci.ca/">CompSci.ca</a>. All Rights Reserved</p>
+    <p><a href="http://compsci.ca/ToU.html">Terms of Use</a> | <a href="http://compsci.ca/Privacy.html">Privacy Policy</a></p>
+  </div>
+
+</div>
+
+
+<script type="text/javascript">   var uservoiceOptions = {     key: 
+'dwite',     host: 'dwite.uservoice.com',      forum: '103109',     
+lang: 'en',     showTab: false   };   function _loadUserVoice() {     
+var s = document.createElement('script');     s.src = ("https:" == 
+document.location.protocol ? "https://" : "http://") + 
+"cdn.uservoice.com/javascripts/widgets/tab.js";     
+document.getElementsByTagName('head')[0].appendChild(s);   }   
+_loadSuper = window.onload;   window.onload = (typeof window.onload != 
+'function') ? _loadUserVoice : function() { _loadSuper(); 
+_loadUserVoice(); }; </script>
+
+
+</body></html>
