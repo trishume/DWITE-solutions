@@ -1,0 +1,31 @@
+7
+p Waterloo Toronto
+q Waterloo Toronto
+p Dubai Toronto
+p Montreal Vancouver
+q Montreal Waterloo
+p Dubai Vancouver
+q Montreal Waterloo
+1
+q Waterloo Waterloo
+3
+q Waterloo Waterloo
+p Waterloo Toronto
+q Waterloo Waterloo
+12
+p Dubai Trivandrum
+p Trivandrum Istanbul
+p Waterloo Dubai
+q Trivandrum Mumbai
+q Istanbul Dubai
+p Mumbai Dubai
+p Sydney Mumbai
+q Trivandrum Sydney
+p Washington Tokyo
+q Tokyo Dubai
+p Washington Sydney
+q Tokyo Dubai
+3
+q Waterloo Waterloo
+p Waterloo Toronto
+q Waterloo Waterloo
